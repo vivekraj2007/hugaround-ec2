@@ -1,0 +1,25 @@
+<div class='container'>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h2>
+          Editing your <%= @agent.short_type %>
+          <%= image_tag "spinner-arrows.gif", :class => "spinner", :id => 'agent-spinner' %>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <%= render 'form' %>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="btn-group">
+        <%= link_to '<span class="glyphicon glyphicon-chevron-left"></span> Back'.html_safe, agents_path, class: "btn btn-default" %>
+        <%= link_to '<span class="glyphicon glyphicon-asterisk"></span> Show'.html_safe, agent_path(@agent), class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+</div>
